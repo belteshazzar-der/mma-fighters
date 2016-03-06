@@ -1,29 +1,19 @@
 
-# MMA Fighter API
+# MMA Fighters
 Get fighter JSON by name.  
 
 ## Install
 From source:
 
 ```
-git clone https://github.com/valish/mma-api
+git clone https://github.com/belteshazzar543/mma-fighters
 cd mma-api
 npm install
-```
-
-From npm:
-
-```
-npm install mma
 ```
 
 ## Use
 
 ```
-> var mma = require('mma');
-> mma.fighter("Jon Jones", function(data) {
-    console.log(data);
-  });
 > {
     "name": "Jon Jones",
     "nickname": "Bones",
