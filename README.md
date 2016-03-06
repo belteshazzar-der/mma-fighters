@@ -1,6 +1,6 @@
 
 # MMA Fighters
-Get fighter JSON by name.  
+Extract the data from a list of fighters to and ARFF File using MMA API
 
 ## Install
 From source:
