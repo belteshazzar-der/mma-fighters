@@ -1,6 +1,6 @@
 
 # MMA Fighters
-Extract the data from a list of fighters to and ARFF File using MMA API
+Extract data from fighters to an ARFF File using MMA API
 
 ## Install
 From source:
@@ -11,7 +11,7 @@ cd mma-api
 npm install
 ```
 
-## Use
+## Fighter JSON Example 
 
 ```
 > {

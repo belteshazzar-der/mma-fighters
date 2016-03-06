@@ -18,7 +18,7 @@
     "Arts"
   ],
   "author": "Belteshazzar",
-  "homepage": "https://github.com/Valish/mma-api",
+  "homepage": "https://github.com/belteshazzar543/mma-fighters",
   "dependencies": {
     "google": "^1.4.0",
     "line-by-line": "^0.1.4",
