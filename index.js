@@ -2,25 +2,13 @@ var mma = require('./lib/mma');
 var mongoose = require('mongoose');
 var lineByLineReader = require('line-by-line');
 var config = require('./config'); // get our config file
-var fs = require('fs');
 var Fighter = require('./models/fighter');
 
 mongoose.connect(config.database); // connect to database
 
-outputARFF = './data/mma-fighters.arff';
-headerARFF = './data/arff-header.txt';
+lr = new lineByLineReader('./data/small.txt');
 
-//Write out ARFF Header
-fs.writeFile(outputARFF, "", function(err) {
-
-    if(err) {
-        return console.log(err);
-    }
-
-    console.log("\nWrote ARFF header...\n");
-}); 
-
-lr = new lineByLineReader('./data/fighters.txt');
+console.log("\nStarting to build database!\n\n");
 
 lr.on('error', function (err) {
 	// 'err' contains error object
@@ -37,7 +25,7 @@ lr.on('line', function (line) {
 		var fighter = new Fighter();
 
 		//This is were the parsing takes place!
-		fighter.name = line;
+		fighter.name = data.name;
 		fighter.weight = data.weight;
 		fighter.weight_class = data.weight_class;
 		fighter.age = data.age;
@@ -73,19 +61,12 @@ lr.on('line', function (line) {
 
 		fighter.save(function(err) {
             if (err){
-                console.log('Couldn\'t save fighter JSON! ' + err);  
+                console.log('Couldn\'t save fighter JSON! ' + line + ' ' + err);  
                 return;
             }
+
+            console.log(fighter.name);
 	    });
-
-	    console.log('Saved fighter ' + line);
-
-	 //    fs.appendFile(outputARFF, entry, function(err) {
-		    
-		//     if(err) {
-		//         return console.log(err);
-		//     }
-		// }); 
  	});
 
  	lr.resume();
