@@ -1,0 +1,54 @@
+@RELATION fighters
+
+@ATTRIBUTE  0_weight       			REAL
+@ATTRIBUTE  0_weight_class    		{ flyweight, bantamweight, featherweight, lightweight, welterweight, middleweight, light heavyweight, heavyweight, super heavyweight }
+@ATTRIBUTE  0_age    				REAL
+@ATTRIBUTE  0_height   				REAL
+@ATTRIBUTE  0_wins_total  			REAL
+@ATTRIBUTE  0_wins_KO 				REAL
+@ATTRIBUTE  0_wins_TO 				REAL
+@ATTRIBUTE  0_wins_decision 		REAL
+@ATTRIBUTE  0_wins_other 			REAL
+@ATTRIBUTE  0_loses_total  			REAL
+@ATTRIBUTE  0_loses_KO 				REAL
+@ATTRIBUTE  0_loses_TO 				REAL
+@ATTRIBUTE  0_loses_decision 		REAL
+@ATTRIBUTE  0_loses_other 			REAL
+@ATTRIBUTE  0_strikes_attempted 	REAL
+@ATTRIBUTE  0_strikes_successful	REAL
+@ATTRIBUTE  0_strikes_standing		REAL
+@ATTRIBUTE  0_strikes_clinch		REAL
+@ATTRIBUTE  0_strike_sground		REAL
+@ATTRIBUTE  0_takedowns_attempted 	REAL
+@ATTRIBUTE  0_takedowns_successful	REAL
+@ATTRIBUTE  0_takedowns_submissions	REAL
+@ATTRIBUTE  0_takedowns_passes		REAL
+@ATTRIBUTE  0_takedowns_sweeps		REAL
+@ATTRIBUTE  1_weight       			REAL
+@ATTRIBUTE  1_weight_class    		{ flyweight, bantamweight, featherweight, lightweight, welterweight, middleweight, light heavyweight, heavyweight, super heavyweight }
+@ATTRIBUTE  1_age    				REAL
+@ATTRIBUTE  1_height   				REAL
+@ATTRIBUTE  1_wins_total  			REAL
+@ATTRIBUTE  1_wins_KO 				REAL
+@ATTRIBUTE  1_wins_TO 				REAL
+@ATTRIBUTE  1_wins_decision 		REAL
+@ATTRIBUTE  1_wins_other 			REAL
+@ATTRIBUTE  1_loses_total  			REAL
+@ATTRIBUTE  1_loses_KO 				REAL
+@ATTRIBUTE  1_loses_TO 				REAL
+@ATTRIBUTE  1_loses_decision 		REAL
+@ATTRIBUTE  1_loses_other 			REAL
+@ATTRIBUTE  1_strikes_attempted 	REAL
+@ATTRIBUTE  1_strikes_successful	REAL
+@ATTRIBUTE  1_strikes_standing		REAL
+@ATTRIBUTE  1_strikes_clinch		REAL
+@ATTRIBUTE  1_strikes_ground		REAL
+@ATTRIBUTE  1_takedowns_attempted 	REAL
+@ATTRIBUTE  1_takedowns_successful	REAL
+@ATTRIBUTE  1_takedowns_submissions	REAL
+@ATTRIBUTE  1_takedowns_passes		REAL
+@ATTRIBUTE  1_takedowns_sweeps		REAL
+@ATTRIBUTE  outcome					{ 0, 1 }
+
+@DATA
+

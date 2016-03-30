@@ -29,7 +29,7 @@ lr.on('line', function (line) {
 		fighter.weight = data.weight;
 		fighter.weight_class = data.weight_class;
 		fighter.age = data.age;
-		fighter.height = data.weight;
+		fighter.height = data.height;
 		fighter.wins_total = data.wins.total;
 		fighter.wins_ko = data.wins.knockouts;
 		fighter.wins_to = data.wins.submissions;
